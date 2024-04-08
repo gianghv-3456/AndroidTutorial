@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Activity Lab Practice</string>
+    <string name="send">Send</string>
+    <string name="main_activity_edt_hint">Enter Your Message Here</string>
+    <string name="main_activity_message_content_default">This is the message</string>
+    <string name="main_activity_message_title">Reply Received</string>
+    <string name="second_activity_message_title">Message Received</string>
+    <string name="reply">Reply</string>
+</resources>

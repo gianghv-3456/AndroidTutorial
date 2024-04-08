@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fragment Practice</string>
+
+    <string name="dune_content">Tiểu thuyết \"Dune\" của Frank Herbert, được xuất bản lần đầu vào năm 1965, không chỉ là một tác phẩm kinh điển trong thể loại khoa học viễn tưởng mà còn được coi là một trong những tiểu thuyết vĩ đại nhất của thế kỷ 20. \"Dune\" là sự kết hợp độc đáo giữa chính trị, tôn giáo, sinh thái, và phiêu lưu, tạo ra một thế giới phong phú và sâu sắc với chiều sâu văn hóa và lịch sử đáng kinh ngạc.\n\n<b>Nội dung cơ bản:</b>
+Truyện diễn ra trên hành tinh Arrakis, còn được gọi là Dune. Đây là hành tinh duy nhất trong vũ trụ có một nguồn tài nguyên quý giá: gia vị (Spice), một chất ma túy tăng cường tư duy và kéo dài tuổi thọ, đồng thời là yếu tố cần thiết cho việc điều hướng không gian. Câu chuyện tập trung vào gia đình Atreides, những người chuyển đến Arrakis để quản lý việc khai thác gia vị nhưng sớm phát hiện ra mình rơi vào một cuộc đấu tranh quyền lực đầy rẫy mưu mô và phản bội.
+
+\n\n<b>Nhân vật và chủ đề:</b>
+
+        \n<b>Paul Atreides</b>: Nhân vật chính của câu chuyện, sau này trở thành Muad\'Dib, một lãnh tụ tinh thần và quân sự của người Fremen, bản địa của Arrakis.
+        \n<b>Duke Leto Atreides</b>: Cha của Paul, một lãnh đạo được kính trọng vì lòng dũng cảm và công bằng.
+        \n<b>Lady Jessica</b>: Mẹ của Paul, thuộc Bene Gesserit, một hội kín nữ giới với khả năng tâm lý và vật lý phi thường.
+        \n<b>Baron Vladimir Harkonnen</b>: Kẻ thù của gia đình Atreides, một nhân vật tàn bạo và tham vọng muốn kiểm soát hoàn toàn Arrakis và nguồn gia vị.
+
+\n\"Dune\" khám phá nhiều chủ đề sâu sắc, bao gồm quyền lực, tôn giáo, sinh thái, tiến hóa của con người, và sự xung đột giữa định mệnh và tự do lựa chọn. Herbert tạo ra một vũ trụ phức tạp với các hệ thống chính trị, tôn giáo, và xã hội đa dạng, thách thức độc giả suy ngẫm về mối quan hệ giữa con người và môi trường, cũng như giữa quyền lực và trách nhiệm.
+
+        \n\n<b>Tiếp nối và ảnh hưởng:</b>
+
+\"Dune\" là quyển đầu tiên trong một series dài, bao gồm các tiếp nối như \"Dune Messiah,\" \"Children of Dune,\" và nhiều hơn nữa, mỗi quyển mở rộng thế giới và khám phá các hậu quả của các sự kiện được thiết lập từ quyển đầu tiên. Tác phẩm và series của Herbert đã ảnh hưởng sâu rộng đến thể loại khoa học viễn tưởng, từ văn học đến phim ảnh và trò chơi điện tử, đồng thời khơi gợi nhiều cuộc thảo luận về triết lý, chính trị, và môi trường.</string>
+    <string name="dune_title">DUNE 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like_the_article">LIKE THE ARTICLE?</string>
+    <string name="like">Like</string>
+    <string name="thanks">Thanks</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+</resources>

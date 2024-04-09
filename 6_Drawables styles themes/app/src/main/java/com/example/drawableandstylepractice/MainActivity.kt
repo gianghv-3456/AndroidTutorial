@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityMainBinding
-    private val team1Count = MutableLiveData(0)
-    private val team2Count = MutableLiveData(0)
+    private val team1Count: MutableLiveData<Int> = MutableLiveData(0)
+    private val team2Count: MutableLiveData<Int> = MutableLiveData(0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,29 +34,19 @@ class MainActivity : AppCompatActivity() {
 
     private fun registerButtonClickEvents() {
         binding.team0AddBtn.setOnClickListener {
-            val currentValue = team1Count.value!!
-            team1Count.postValue(currentValue + 1)
+            team1Count.plus(1)
         }
 
         binding.team0RemoveBtn.setOnClickListener {
-            var currentValue = team1Count.value!!
-            currentValue--
-
-            if (currentValue < 0) currentValue = 0
-
-            team1Count.postValue(currentValue)
+            team1Count.minus(1)
         }
 
         binding.team1AddBtn.setOnClickListener {
-            val currentValue = team2Count.value!!
-            team2Count.postValue(currentValue+1)
+            team2Count.plus(1)
         }
 
         binding.team1RemoveBtn.setOnClickListener {
-            var currentValue = team2Count.value!!
-            currentValue--
-            if (currentValue < 0) currentValue = 0
-            team2Count.postValue(currentValue)
+            team2Count.minus(1)
         }
     }
 
@@ -136,5 +126,23 @@ class MainActivity : AppCompatActivity() {
 
         team1Count.postValue(team1)
         team2Count.postValue(team2)
+    }
+
+    /**
+     * Extension function to plus count number presented by MutableLiveData
+     */
+    operator fun MutableLiveData<Int>.plus(x: Int) {
+        val currentValue = this.value!!
+        this.postValue(currentValue + 1)
+    }
+
+    /**
+     * Extension function to minus count number presented by MutableLiveData
+     */
+    operator fun MutableLiveData<Int>.minus(x: Int) {
+        var currentValue = this.value!!
+        currentValue--
+        if (currentValue < 0) currentValue = 0
+        this.postValue(currentValue)
     }
 }

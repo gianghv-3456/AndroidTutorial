@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.NoActionBar" >
+        <item name="android:colorPrimary">@color/day_primary</item>
+        <item name="colorOnPrimary">@color/day_color_onprimary_gray</item>
+        <item name="colorPrimaryVariant">@color/day_primary_dark</item>
+        <item name="android:colorPrimaryDark">@color/day_primary_dark</item>
+        <item name="colorSecondary">@color/day_secondary</item>
+        <item name="colorOnSecondary">@color/day_onsecondary</item>
+
+        <item name="toolbarStyle">@style/Widget.AppTheme.Component.Toolbar</item>
+        <item name="android:statusBarColor">@color/day_primary_dark</item>
+
+        <item name="android:textAppearance">@style/Widget.AppTheme.TextAppearance.Body</item>
+
+        <item name="android:colorBackground">@color/day_color_background</item>
+        <item name="colorOnBackground">@color/day_color_onbackground</item>
+
+
+    </style>
+
+    <style name="Widget.AppTheme.TextAppearance.H1" parent="Widget.AppTheme.TextAppearance.Body">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextAppearance.BoldText" parent="Widget.AppTheme.TextAppearance.Body">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextAppearance.Body" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.AppTheme.Component.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorPrimary">@color/day_primary</item>
+        <item name="colorPrimaryVariant">@color/day_primary_dark</item>
+        <item name="colorOnPrimary">@color/day_color_onprimary_gray</item>
+    </style>
+
+
+</resources>

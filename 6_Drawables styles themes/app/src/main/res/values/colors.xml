@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="day_primary">#566CD8</color>
+    <color name="day_primary_dark">#4259CC</color>
+    <color name="day_color_onprimary_gray">#FFFFFF</color>
+    <color name="day_secondary">#E19849</color>
+    <color name="day_onsecondary">#FFFFFF</color>
+    <color name="day_secondary_dark">#C88235</color>
+    <color name="day_color_background">#FFFFFF</color>
+    <color name="day_color_onbackground">#54565F</color>
+
+    <color name="night_primary">#566CD8</color>
+    <color name="night_primary_dark">#4259CC</color>
+    <color name="night_color_onprimary_gray">#FFFFFF</color>
+    <color name="night_secondary">#E19849</color>
+    <color name="night_color_background">#454040</color>
+    <color name="night_color_onbackground">#FFFFFF</color>
+</resources>

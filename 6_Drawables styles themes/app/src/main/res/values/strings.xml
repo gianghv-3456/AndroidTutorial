@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drawable and style practice</string>
+    <string name="day_mode_appbar_menu">DayMode</string>
+    <string name="night_mode_appbar_menu">NightMode</string>
+</resources>

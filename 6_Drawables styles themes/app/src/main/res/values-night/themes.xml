@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:colorPrimary">@color/day_primary</item>
+        <item name="colorOnPrimary">@color/day_color_onprimary_gray</item>
+        <item name="colorPrimaryVariant">@color/day_primary_dark</item>
+        <item name="android:colorPrimaryDark">@color/day_primary_dark</item>
+        <item name="colorSecondary">@color/day_secondary</item>
+        <item name="colorOnSecondary">@color/day_onsecondary</item>
+
+        <item name="toolbarStyle">@style/Widget.AppTheme.Component.Toolbar</item>
+        <item name="android:statusBarColor">@color/day_primary_dark</item>
+
+
+        <item name="android:colorBackground">@color/night_color_background</item>
+        <item name="colorOnBackground">@color/night_color_onbackground</item>
+        <item name="android:textAppearance">@style/Widget.AppTheme.TextAppearance.Body</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextAppearance.Body" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

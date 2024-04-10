@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DialogNPicker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="textAppearanceBody1">@style/Widget.MyApp.Appearance.BaseText</item>
+    </style>
+
+    <style name="Theme.DialogNPicker" parent="Base.Theme.DialogNPicker" />
+
+    <style name="Widget.MyApp.Appearance.BaseText" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.MyApp.Appearance.H1" parent="Widget.MyApp.Appearance.BaseText">
+        <item name="android:textSize">96sp</item>
+    </style>
+
+    <style name="Widget.MyApp.Appearance.H2" parent="Widget.MyApp.Appearance.BaseText">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="Widget.MyApp.Appearance.H3" parent="Widget.MyApp.Appearance.BaseText">
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="Widget.MyApp.Appearance.H4" parent="Widget.MyApp.Appearance.BaseText">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="Widget.MyApp.Appearance.H5" parent="Widget.MyApp.Appearance.BaseText">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Widget.MyApp.Appearance.Subtitle1" parent="Widget.MyApp.Appearance.BaseText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

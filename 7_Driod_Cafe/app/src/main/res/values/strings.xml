@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">DriodCafe</string>
     <string name="droid_desserts">Droid Desserts</string>
+    <string name="note_field_label">Note</string>
+    <string name="phone_number_field_hint">phone number</string>
+    <string name="phone_field_label">Phone</string>
+    <string name="address_field_hint">address</string>
+    <string name="address_field_label">Address</string>
+    <string name="name_field_hint">name</string>
+    <string name="name_field_label">Name</string>
+    <string name="ordered_screen_label">You ordered a donut</string>
+    <string name="choose_delivery_method_label">Choose a delivery method:</string>
+    <string name="same_day_messenger_service_method">Same day messenger service</string>
+    <string name="next_day_ground_delivery_method_text">Next day ground delivery</string>
+    <string name="pick_up_method_text">Pick up</string>
 </resources>

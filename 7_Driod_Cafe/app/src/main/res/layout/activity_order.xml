@@ -1,10 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".OrderActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/topAppBar"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStartWithNavigation="0dp"
+                app:title="@string/app_name" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".OrderActivity">
+
+
+            <TextView
+                android:id="@+id/order_screen_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/ordered_screen_label"
+                android:textAppearance="@style/Widget.DroidCafe.Appearance.H5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/name_field_label"
+                android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/order_screen_title_tv" />
+
+            <EditText
+                android:id="@+id/name_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:hint="@string/name_field_hint"
+                android:inputType="textPersonName"
+                android:minWidth="200dp"
+                app:layout_constraintStart_toEndOf="@id/name_label_tv"
+                app:layout_constraintTop_toTopOf="@id/name_label_tv"
+                android:autofillHints="fullname" />
+
+            <TextView
+                android:id="@+id/address_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/address_field_label"
+                android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_label_tv" />
+
+
+            <EditText
+                android:id="@+id/address_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:hint="@string/address_field_hint"
+                android:inputType="text"
+                android:maxLines="3"
+                android:minWidth="200dp"
+                android:minLines="3"
+                app:layout_constraintStart_toEndOf="@id/address_label_tv"
+                app:layout_constraintTop_toTopOf="@id/address_label_tv"
+                android:autofillHints="address" />
+
+
+            <TextView
+                android:id="@+id/phone_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="72dp"
+                android:text="@string/phone_field_label"
+                android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/address_label_tv" />
+
+            <EditText
+                android:id="@+id/phone_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:hint="@string/phone_number_field_hint"
+                android:inputType="phone"
+                android:minWidth="200dp"
+                app:layout_constraintStart_toEndOf="@id/phone_label_tv"
+                app:layout_constraintTop_toTopOf="@id/phone_label_tv"
+                android:autofillHints="phone" />
+
+            <TextView
+                android:id="@+id/note_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/note_field_label"
+
+                android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone_label_tv" />
+
+
+            <EditText
+                android:id="@+id/note_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:hint="@string/note_field_label"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="5"
+                android:minWidth="200dp"
+                android:minLines="3"
+                app:layout_constraintStart_toEndOf="@id/note_label_tv"
+                app:layout_constraintTop_toTopOf="@id/note_label_tv" />
+
+            <TextView
+                android:id="@+id/delivery_choose_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/choose_delivery_method_label"
+                android:textAppearance="@style/Widget.DroidCafe.Appearance.H5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/note_edt" />
+
+            <RadioGroup
+                android:id="@+id/delivery_choose_radio_btn_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/delivery_choose_label_tv">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/same_day_messenger_service_method"
+                    android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_day_ground_delivery_method_text"
+                    android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_up_method_text"
+                    android:textAppearance="@style/Widget.DroidCafe.Appearance.Subtitle1" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

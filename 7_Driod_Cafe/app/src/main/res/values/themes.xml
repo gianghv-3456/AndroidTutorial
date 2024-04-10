@@ -3,7 +3,41 @@
     <style name="Base.Theme.DriodCafe" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="textAppearanceBody1">@style/Widget.DroidCafe.Appearance.BaseText</item>
     </style>
 
     <style name="Theme.DriodCafe" parent="Base.Theme.DriodCafe" />
+
+    <style name="Widget.DroidCafe.Appearance.BaseText" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.DroidCafe.Appearance.H1" parent="Widget.DroidCafe.Appearance.BaseText">
+        <item name="android:textSize">96sp</item>
+    </style>
+
+    <style name="Widget.DroidCafe.Appearance.H2" parent="Widget.DroidCafe.Appearance.BaseText">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="Widget.DroidCafe.Appearance.H3" parent="Widget.DroidCafe.Appearance.BaseText">
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="Widget.DroidCafe.Appearance.H4" parent="Widget.DroidCafe.Appearance.BaseText">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="Widget.DroidCafe.Appearance.H5" parent="Widget.DroidCafe.Appearance.BaseText">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Widget.DroidCafe.Appearance.Subtitle1" parent="Widget.DroidCafe.Appearance.BaseText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
 </resources>
